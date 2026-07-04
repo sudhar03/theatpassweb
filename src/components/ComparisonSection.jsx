@@ -71,12 +71,12 @@ const ComparisonSection = () => {
               <div className="text-gray-400 font-medium text-sm uppercase tracking-wider mb-4">{item.category}</div>
               <div className="space-y-3">
                 <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-gray-500 rounded-full mt-2"></div>
-                  <div className="text-gray-400">{item.traditional}</div>
+                  <div className="w-2 h-2 bg-gray-500 rounded-full mt-2 shrink-0"></div>
+                  <div className="text-gray-400"><span className="font-semibold text-gray-300">Traditional:</span> {item.traditional}</div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-cta-blue rounded-full mt-2"></div>
-                  <div className="text-white font-semibold">{item.atpass}</div>
+                  <div className="w-2 h-2 bg-cta-blue rounded-full mt-2 shrink-0"></div>
+                  <div className="text-white"><span className="font-semibold text-cta-blue">theAtpass:</span> {item.atpass}</div>
                 </div>
               </div>
             </div>

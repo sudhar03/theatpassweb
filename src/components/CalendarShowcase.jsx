@@ -25,8 +25,8 @@ const CalendarShowcase = () => {
             ))}
           </div>
 
-          {/* Calendar container */}
-          <div className="bg-white rounded-3xl shadow-2xl p-4 md:p-8 border border-border relative overflow-hidden">
+          {/* Calendar container (hidden on mobile) */}
+          <div className="hidden sm:block bg-white rounded-3xl shadow-2xl p-4 md:p-8 border border-border relative overflow-hidden">
             {/* Background grid */}
             <div className="absolute inset-0 opacity-5 dotted-grid"></div>
             <div className="relative">

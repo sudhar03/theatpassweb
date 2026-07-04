@@ -407,12 +407,13 @@ function App() {
 
   const testimonials = [
     {
-      name: "James Rodriguez",
-      role: "Sales Coach",
-      result: "12 booked calls in first month",
-      text: "I was skeptical at first, but the results speak for themselves. Every call has been with someone genuinely interested in what I offer.",
+      name: "Austin Reed",
+      role: "Founder @ B2B Tech Solutions",
+      result: "12+ calls a month",
+      text: "We're booking 12+ calls a month with this system. It's the most consistent our pipeline has looked in two years. Wish I'd found this before wasting a quarter on cold LinkedIn DMs myself.",
       rating: 5,
-      avatar: "/james.jpeg"
+      avatar: "/james.jpeg",
+      linkedin: "https://www.linkedin.com/in/automationsexpert/"
     },
     {
       name: "Kalyca Zarich",
@@ -420,15 +421,17 @@ function App() {
       result: "0 clients → 6 clients in a month",
       text: "Working with Chandru has been a total game changer. I ended up closing six clients that month. If Chandru lands in your inbox, give him a shot. Highly recommend him.",
       rating: 5,
-      avatar: "/kalyca.jpeg"
+      avatar: "/kalyca.jpeg",
+      linkedin: "https://www.linkedin.com/in/kalyca-zarich-6bb05a168/"
     },
     {
-      name: "Sarah Mitchell",
-      role: "Marketing Consultant",
-      result: "3x increase in qualified leads",
-      text: "The buyer-intent approach is completely different from anything I've tried. The quality of calls is night and day compared to cold outreach.",
+      name: "Sarah Williams",
+      role: "Business Performance Coach",
+      result: "Conversations tripled",
+      text: "Conversations tripled in the first month. My calendar hasn't looked like this since I started coaching. I actually had to block off Fridays just to keep up with replies.",
       rating: 5,
-      avatar: "/sarah.jpeg"
+      avatar: "/sarah.jpeg",
+      linkedin: "https://www.linkedin.com/in/businessadviceportsmouthandchichester/"
     }
   ];
 
@@ -480,9 +483,9 @@ function App() {
             </a>
           </div>
           <div className="flex items-center gap-4">
-            <button className="hidden md:block bg-gold-500 hover:bg-gold-600 text-navy-950 px-6 py-2.5 rounded-full font-bold transition-all hover:shadow-lg hover:shadow-gold-500/20 hover:-translate-y-0.5">
+            <a href="https://calendly.com/chandru-ink7/intro-call" target="_blank" rel="noopener noreferrer" className="hidden md:block bg-gold-500 hover:bg-gold-600 text-navy-950 px-6 py-2.5 rounded-full font-bold transition-all hover:shadow-lg hover:shadow-gold-500/20 hover:-translate-y-0.5">
               Book a Strategy Call
-            </button>
+            </a>
             <button 
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className={`md:hidden p-2 rounded-lg ${scrolled || inHero ? 'hover:bg-slate-100 text-navy-900' : 'hover:bg-navy-900 text-white'} transition-colors`}
@@ -505,9 +508,9 @@ function App() {
             <a href="#what-you-get" onClick={() => setMobileMenuOpen(false)} className="block font-semibold hover:text-gold-500 transition-colors py-2">What you get</a>
             <a href="#guarantee" onClick={() => setMobileMenuOpen(false)} className="block font-semibold hover:text-gold-500 transition-colors py-2">Guarantee</a>
             <a href="#faq" onClick={() => setMobileMenuOpen(false)} className="block font-semibold hover:text-gold-500 transition-colors py-2">FAQ</a>
-            <button className="w-full bg-gold-500 hover:bg-gold-600 text-navy-950 px-6 py-3 rounded-full font-bold transition-all">
+            <a href="https://calendly.com/chandru-ink7/intro-call" target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)} className="block w-full bg-gold-500 hover:bg-gold-600 text-navy-950 px-6 py-3 rounded-full font-bold transition-all text-center">
               Book a Strategy Call
-            </button>
+            </a>
           </div>
         </div>
       </nav>
@@ -553,9 +556,9 @@ function App() {
             </p>
             
             {/* CTA Button */}
-            <button className="bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-navy-950 px-10 py-5 rounded-full font-bold text-lg transition-all hover:shadow-xl hover:shadow-gold-500/30 hover:-translate-y-1 mb-4">
+            <a href="https://calendly.com/chandru-ink7/intro-call" target="_blank" rel="noopener noreferrer" className="inline-block bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-navy-950 px-10 py-5 rounded-full font-bold text-lg transition-all hover:shadow-xl hover:shadow-gold-500/30 hover:-translate-y-1 mb-4">
               Book Your Free Strategy Call
-            </button>
+            </a>
             
             {/* Trust Text */}
             <p className="text-sm text-text-muted">
@@ -565,7 +568,7 @@ function App() {
  
           {/* Hero Visual (Interactive Option B Widget) */}
           <div className="relative mt-8 md:mt-16 max-w-4xl mx-auto animate-slide-up">
-            <div className="rounded-3xl shadow-2xl border border-slate-200 hover:shadow-3xl transition-shadow duration-500 overflow-hidden">
+            <div className="hidden md:block rounded-3xl shadow-2xl border border-slate-200 hover:shadow-3xl transition-shadow duration-500 overflow-hidden">
               <DashboardMockup />
             </div>
             {/* New Meeting Booked Notification (replacing herosect2.png) */}
@@ -648,12 +651,28 @@ function App() {
                       </div>
                       
                       {/* Star Rating */}
-                      <div className="flex justify-center gap-1">
+                      <div className="flex justify-center gap-1 mb-4">
                         {[1, 2, 3, 4, 5].map((star) => (
                           <svg key={star} className="w-5 h-5 text-yellow-500 fill-current" viewBox="0 0 20 20">
                             <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
                           </svg>
                         ))}
+                      </div>
+
+                      {/* LinkedIn Link */}
+                      <div className="flex justify-center">
+                        <a
+                          href={testimonial.linkedin}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-2 text-gold-600 hover:text-gold-700 transition-colors"
+                          aria-label={`${testimonial.name} LinkedIn profile`}
+                        >
+                          <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                          </svg>
+                          <span className="text-sm font-medium">LinkedIn</span>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -828,25 +847,25 @@ function App() {
             <div className="bg-white rounded-3xl p-6 border border-slate-200 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
               <div>
                 {/* Visual Widget */}
-                <div className="bg-navy-950 rounded-2xl p-4 mb-6 border border-slate-800 text-xs font-mono text-slate-300 shadow-inner h-48 overflow-hidden flex flex-col gap-3">
-                  <div className="flex items-center justify-between border-b border-slate-850 pb-2 text-[10px] uppercase text-gold-400 font-bold tracking-wider">
+                <div className="bg-white rounded-2xl p-4 mb-6 border border-slate-200 text-xs font-mono text-slate-700 shadow-inner h-48 overflow-hidden flex flex-col gap-3">
+                  <div className="flex items-center justify-between border-b border-slate-200 pb-2 text-[10px] uppercase text-gold-600 font-bold tracking-wider">
                     <span>Active Intent Signals</span>
                     <span className="flex items-center gap-1.5"><span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span> Live Tracking</span>
                   </div>
                   <div className="space-y-3">
-                    <div className="bg-[#0C1322] p-2.5 rounded-lg border border-slate-800 flex items-center justify-between">
+                    <div className="bg-slate-50 p-2.5 rounded-lg border border-slate-200 flex items-center justify-between">
                       <div>
-                        <p className="font-semibold text-white">Comment on Competitor Ads</p>
-                        <p className="text-[10px] text-slate-400">"We need to solve this asap..."</p>
+                        <p className="font-semibold text-navy-900">Comment on Competitor Ads</p>
+                        <p className="text-[10px] text-slate-500">"We need to solve this asap..."</p>
                       </div>
-                      <span className="bg-green-500/10 text-green-400 border border-green-500/30 px-2 py-0.5 rounded text-[10px] font-bold">HIGH INTENT</span>
+                      <span className="bg-green-500/10 text-green-600 border border-green-500/30 px-2 py-0.5 rounded text-[10px] font-bold">HIGH INTENT</span>
                     </div>
-                    <div className="bg-[#0C1322] p-2.5 rounded-lg border border-slate-800 flex items-center justify-between">
+                    <div className="bg-slate-50 p-2.5 rounded-lg border border-slate-200 flex items-center justify-between">
                       <div>
-                        <p className="font-semibold text-white">LinkedIn Hiring Alert</p>
-                        <p className="text-[10px] text-slate-400">Hiring: B2B Growth Consultant</p>
+                        <p className="font-semibold text-navy-900">LinkedIn Hiring Alert</p>
+                        <p className="text-[10px] text-slate-500">Hiring: B2B Growth Consultant</p>
                       </div>
-                      <span className="bg-gold-500/10 text-gold-400 border border-gold-500/30 px-2 py-0.5 rounded text-[10px] font-bold">RELEVANT NEED</span>
+                      <span className="bg-gold-500/10 text-gold-600 border border-gold-500/30 px-2 py-0.5 rounded text-[10px] font-bold">RELEVANT NEED</span>
                     </div>
                   </div>
                 </div>
@@ -967,49 +986,6 @@ function App() {
             ))}
           </div>
 
-          {/* Interactive Pipeline graphic replacing charactersbox.jpg */}
-          <div className="bg-navy-950 rounded-3xl p-6 md:p-10 border border-slate-800 shadow-2xl hover:shadow-3xl transition-all duration-300 max-w-5xl mx-auto relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-6">
-            {/* Step 1 */}
-            <div className="flex-1 w-full bg-[#0C1322] border border-slate-800 p-5 rounded-2xl relative group hover:border-slate-600 transition-colors">
-               <div className="absolute -top-3 -right-3 w-7 h-7 bg-gold-500 rounded-full flex items-center justify-center text-navy-950 font-bold text-sm shadow-lg shadow-gold-500/30">1</div>
-               <p className="text-gold-400 text-[11px] font-bold mb-1.5 uppercase tracking-wider">Intercept</p>
-               <h4 className="text-white font-bold text-sm mb-1">Intent Signal Detected</h4>
-               <p className="text-slate-400 text-xs">LinkedIn, Jobs, News, Ads</p>
-            </div>
-            {/* Arrow */}
-            <div className="hidden md:flex text-slate-700">
-               <svg className="w-6 h-6 animate-pulse-slow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
-            </div>
-            {/* Step 2 */}
-            <div className="flex-1 w-full bg-[#0C1322] border border-slate-800 p-5 rounded-2xl relative group hover:border-slate-600 transition-colors">
-               <div className="absolute -top-3 -right-3 w-7 h-7 bg-gold-500 rounded-full flex items-center justify-center text-navy-950 font-bold text-sm shadow-lg shadow-gold-500/30">2</div>
-               <p className="text-gold-400 text-[11px] font-bold mb-1.5 uppercase tracking-wider">Filter</p>
-               <h4 className="text-white font-bold text-sm mb-1">ICP Qualification</h4>
-               <p className="text-slate-400 text-xs">Size, Budget, Title check</p>
-            </div>
-            {/* Arrow */}
-            <div className="hidden md:flex text-slate-700">
-               <svg className="w-6 h-6 animate-pulse-slow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
-            </div>
-            {/* Step 3 */}
-            <div className="flex-1 w-full bg-[#0C1322] border border-slate-800 p-5 rounded-2xl relative group hover:border-slate-600 transition-colors">
-               <div className="absolute -top-3 -right-3 w-7 h-7 bg-gold-500 rounded-full flex items-center justify-center text-navy-950 font-bold text-sm shadow-lg shadow-gold-500/30">3</div>
-               <p className="text-gold-400 text-[11px] font-bold mb-1.5 uppercase tracking-wider">Engage</p>
-               <h4 className="text-white font-bold text-sm mb-1">Multi-channel Pitch</h4>
-               <p className="text-slate-400 text-xs">Cold Email & LinkedIn</p>
-            </div>
-            {/* Arrow */}
-            <div className="hidden md:flex text-slate-700">
-               <svg className="w-6 h-6 animate-pulse-slow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
-            </div>
-            {/* Step 4 */}
-            <div className="flex-1 w-full bg-gradient-to-br from-gold-500 to-gold-600 border border-gold-400 p-5 rounded-2xl relative group shadow-[0_0_20px_rgba(212,168,83,0.2)]">
-               <div className="absolute -top-3 -right-3 w-7 h-7 bg-white rounded-full flex items-center justify-center text-navy-950 font-bold text-sm shadow-lg">4</div>
-               <p className="text-navy-900 text-[11px] font-bold mb-1.5 uppercase tracking-wider">Convert</p>
-               <h4 className="text-navy-950 font-bold text-sm mb-1">Calendar Slot Locked</h4>
-               <p className="text-navy-800 text-xs font-medium">Ready for your sales team</p>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -1062,80 +1038,12 @@ function App() {
             ))}
           </div>
 
-          <div className="bg-white rounded-3xl border border-slate-200 shadow-2xl overflow-hidden mb-12 max-w-4xl mx-auto hover:shadow-3xl transition-shadow duration-500">
-            {/* CRM Header Bar */}
-            <div className="bg-navy-950 px-6 py-4 flex items-center justify-between text-white border-b border-slate-800">
-              <div className="flex items-center gap-3">
-                <span className="w-3.5 h-3.5 bg-green-500 rounded-full animate-pulse shadow-[0_0_10px_rgba(34,197,94,0.6)]"></span>
-                <span className="font-bold text-sm tracking-wide uppercase text-slate-100">theAtpass Buyer-Intent CRM</span>
-              </div>
-              <span className="text-xs text-gold-400 font-mono bg-[#0C1322] border border-slate-800 px-3 py-1.5 rounded font-semibold">Active Campaign: Q3 Pipeline</span>
-            </div>
-            {/* CRM Dashboard Table */}
-            <div className="overflow-x-auto bg-[#0C1322]">
-              <table className="w-full text-left text-xs border-collapse">
-                <thead>
-                  <tr className="bg-navy-900 text-slate-300 font-bold border-b border-slate-800 uppercase tracking-wider">
-                    <th className="px-6 py-4">Prospect</th>
-                    <th className="px-6 py-4">Company</th>
-                    <th className="px-6 py-4">Intent Trigger</th>
-                    <th className="px-6 py-4">Lead Score</th>
-                    <th className="px-6 py-4 text-center">Status</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-slate-800/50 text-slate-200 font-medium">
-                  <tr className="hover:bg-navy-900/40 transition-colors">
-                    <td className="px-6 py-4 font-semibold text-white">David Vance</td>
-                    <td className="px-6 py-4 text-slate-400">Vance Consulting Group</td>
-                    <td className="px-6 py-4">
-                      <div className="flex items-center gap-2">
-                        <span className="bg-navy-800 text-blue-300 border border-blue-900/50 px-2 py-0.5 rounded text-[10px] font-bold">LinkedIn comment</span>
-                        <span className="text-slate-400 text-[10px]">on high-ticket acquisition</span>
-                      </div>
-                    </td>
-                    <td className="px-6 py-4 font-mono text-gold-400 font-bold">98/100</td>
-                    <td className="px-6 py-4 text-center">
-                      <span className="bg-green-500/10 text-green-400 border border-green-500/20 px-2.5 py-1 rounded-full text-[10px] font-bold">Call Booked (Jul 12)</span>
-                    </td>
-                  </tr>
-                  <tr className="hover:bg-navy-900/40 transition-colors">
-                    <td className="px-6 py-4 font-semibold text-white">Elena Rostova</td>
-                    <td className="px-6 py-4 text-slate-400">NexaGrowth Corp</td>
-                    <td className="px-6 py-4">
-                      <div className="flex items-center gap-2">
-                        <span className="bg-navy-800 text-blue-300 border border-blue-900/50 px-2 py-0.5 rounded text-[10px] font-bold">Hiring B2B agency</span>
-                        <span className="text-slate-400 text-[10px]">on Indeed</span>
-                      </div>
-                    </td>
-                    <td className="px-6 py-4 font-mono text-gold-400 font-bold">94/100</td>
-                    <td className="px-6 py-4 text-center">
-                      <span className="bg-green-500/10 text-green-400 border border-green-500/20 px-2.5 py-1 rounded-full text-[10px] font-bold">Call Booked (Jul 14)</span>
-                    </td>
-                  </tr>
-                  <tr className="hover:bg-navy-900/40 transition-colors">
-                    <td className="px-6 py-4 font-semibold text-white">Marcus Sterling</td>
-                    <td className="px-6 py-4 text-slate-400">Sterling SaaS Partners</td>
-                    <td className="px-6 py-4">
-                      <div className="flex items-center gap-2">
-                        <span className="bg-navy-800 text-blue-300 border border-blue-900/50 px-2 py-0.5 rounded text-[10px] font-bold">Competitor Webinar</span>
-                        <span className="text-slate-400 text-[10px]">attendee</span>
-                      </div>
-                    </td>
-                    <td className="px-6 py-4 font-mono text-gold-400 font-bold">91/100</td>
-                    <td className="px-6 py-4 text-center">
-                      <span className="bg-gold-500/10 text-gold-400 border border-gold-500/20 px-2.5 py-1 rounded-full text-[10px] font-bold">Follow-up Sent</span>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
 
           <div className="text-center">
             <p className="text-lg text-navy-900 font-bold mb-8">You do not lift a finger on outreach. You just show up to the calls.</p>
-            <button className="bg-gradient-to-r from-navy-800 to-navy-900 hover:from-navy-900 hover:to-navy-950 text-white px-10 py-5 rounded-full font-bold text-lg transition-all hover:shadow-[0_0_20px_rgba(15,23,42,0.4)] hover:-translate-y-1">
+            <a href="https://calendly.com/chandru-ink7/intro-call" target="_blank" rel="noopener noreferrer" className="inline-block bg-gradient-to-r from-navy-800 to-navy-900 hover:from-navy-900 hover:to-navy-950 text-white px-10 py-5 rounded-full font-bold text-lg transition-all hover:shadow-[0_0_20px_rgba(15,23,42,0.4)] hover:-translate-y-1">
               Book your free strategy call
-            </button>
+            </a>
           </div>
         </div>
       </section>
@@ -1200,9 +1108,9 @@ function App() {
             {/* CTA Below Comparison */}
             <div className="text-center mt-12">
               <p className="text-lg text-navy-900 font-bold mb-6">Want prospects who are already looking?</p>
-              <button className="bg-gradient-to-r from-navy-800 to-navy-900 hover:from-navy-900 hover:to-navy-950 text-white px-10 py-5 rounded-full font-bold text-lg transition-all hover:shadow-[0_0_20px_rgba(15,23,42,0.4)] hover:-translate-y-1">
+              <a href="https://calendly.com/chandru-ink7/intro-call" target="_blank" rel="noopener noreferrer" className="inline-block bg-gradient-to-r from-navy-800 to-navy-900 hover:from-navy-900 hover:to-navy-950 text-white px-10 py-5 rounded-full font-bold text-lg transition-all hover:shadow-[0_0_20px_rgba(15,23,42,0.4)] hover:-translate-y-1">
                 Book Your Free Strategy Call
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -1276,9 +1184,9 @@ function App() {
               ))}
             </ul>
 
-            <button className="w-full bg-gradient-to-r from-navy-800 to-navy-900 hover:from-navy-900 hover:to-navy-950 text-white px-8 py-5 rounded-full font-bold text-lg transition-all hover:shadow-[0_0_20px_rgba(15,23,42,0.4)] hover:-translate-y-1">
+            <a href="https://calendly.com/chandru-ink7/intro-call" target="_blank" rel="noopener noreferrer" className="block w-full bg-gradient-to-r from-navy-800 to-navy-900 hover:from-navy-900 hover:to-navy-950 text-white px-8 py-5 rounded-full font-bold text-lg transition-all hover:shadow-[0_0_20px_rgba(15,23,42,0.4)] hover:-translate-y-1 text-center">
               Book Your Free Strategy Call
-            </button>
+            </a>
           </div>
         </div>
       </section>
@@ -1358,22 +1266,22 @@ function App() {
             <p className="text-xl text-text-muted mb-8 max-w-2xl mx-auto font-medium">
               Get 10+ qualified sales calls a month with prospects already in buying mode. Your first 3 are on us.
             </p>
-            <button className="bg-gradient-to-r from-navy-800 to-navy-900 hover:from-navy-900 hover:to-navy-950 text-white px-10 py-5 rounded-full font-bold text-lg transition-all hover:shadow-[0_0_20px_rgba(15,23,42,0.4)] hover:-translate-y-1 mb-4">
+            <a href="https://calendly.com/chandru-ink7/intro-call" target="_blank" rel="noopener noreferrer" className="inline-block bg-gradient-to-r from-navy-800 to-navy-900 hover:from-navy-900 hover:to-navy-950 text-white px-10 py-5 rounded-full font-bold text-lg transition-all hover:shadow-[0_0_20px_rgba(15,23,42,0.4)] hover:-translate-y-1 mb-4">
               Book Your Free Strategy Call
-            </button>
+            </a>
             <p className="text-sm text-text-muted font-bold">
               You only pay when a prospect actually shows up.
             </p>
           </div>
 
-          <div className="bg-white rounded-3xl border border-slate-200 shadow-2xl overflow-hidden max-w-4xl mx-auto hover:shadow-3xl transition-shadow duration-500">
+          <div className="hidden md:block bg-white rounded-3xl border border-slate-200 shadow-2xl overflow-hidden max-w-4xl mx-auto hover:shadow-3xl transition-shadow duration-500">
             {/* Calendar Header */}
             <div className="bg-navy-950 px-6 py-4 flex items-center justify-between border-b border-slate-800">
               <span className="text-sm font-bold text-white uppercase tracking-wider">Your Calendar This Week</span>
               <span className="bg-green-500/10 text-green-400 border border-green-500/30 px-3 py-1 rounded text-xs font-bold">+6 New Meetings Booked</span>
             </div>
             {/* Calendar Grid */}
-            <div className="grid grid-cols-5 divide-x divide-slate-200 text-center text-xs">
+            <div className="grid grid-cols-1 md:grid-cols-5 divide-y md:divide-y-0 divide-x-0 md:divide-x divide-slate-200 text-center text-xs">
               {[
                 { day: "Mon", dates: [
                   { time: "10:00 AM", label: "Intro: Sarah M.", desc: "Marketing CEO", type: "Qualified" },
@@ -1393,9 +1301,9 @@ function App() {
                   { time: "2:00 PM", label: "Closing: Sarah M.", desc: "Follow-up proposal", type: "High Intent" }
                 ] }
               ].map((col, idx) => (
-                <div key={idx} className="bg-navy-50/30 pb-6">
+                <div key={idx} className="bg-navy-50/30 pb-4 md:pb-6">
                   <div className="bg-navy-50 py-3 font-bold border-b border-slate-200 text-navy-800 text-[10px] uppercase tracking-wider">{col.day}</div>
-                  <div className="p-2 space-y-2 mt-2">
+                  <div className="p-3 md:p-2 space-y-3 md:space-y-2 mt-0 md:mt-2">
                     {col.dates.map((meeting, mIdx) => (
                       <div key={mIdx} className="bg-white p-2.5 rounded-xl border border-slate-200 shadow-sm text-left hover:scale-[1.02] hover:shadow-md transition-all duration-200">
                         <p className="font-bold text-[9px] text-navy-800 font-mono">{meeting.time}</p>

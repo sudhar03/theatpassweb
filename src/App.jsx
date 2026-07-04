@@ -1334,9 +1334,9 @@ function App() {
               <p className="text-slate-400 mb-6 max-w-md font-medium leading-relaxed">
                 Buyer-Intent Client Acquisition™. Built for B2B coaches, consultants & service-based founders who want qualified sales calls, not empty promises.
               </p>
-              <button className="bg-white text-navy-950 hover:bg-gold-50 hover:text-gold-700 px-6 py-3 rounded-full font-bold transition-all hover:shadow-lg hover:-translate-y-0.5 border border-slate-200">
+              <a href="https://calendly.com/chandru-ink7/intro-call" target="_blank" rel="noopener noreferrer" className="inline-block bg-white text-navy-950 hover:bg-gold-50 hover:text-gold-700 px-6 py-3 rounded-full font-bold transition-all hover:shadow-lg hover:-translate-y-0.5 border border-slate-200">
                 Book a Strategy Call
-              </button>
+              </a>
             </div>
 
             <div>
@@ -1353,7 +1353,7 @@ function App() {
               <h4 className="text-white font-bold mb-4 uppercase tracking-wider text-sm">Contact</h4>
               <ul className="space-y-3 font-medium">
                 <li className="hover:text-gold-400 transition-colors cursor-pointer">hello@theatpass.com</li>
-                <li className="hover:text-gold-400 transition-colors cursor-pointer">Book a Call</li>
+                <li><a href="https://calendly.com/chandru-ink7/intro-call" target="_blank" rel="noopener noreferrer" className="hover:text-gold-400 transition-colors">Book a Call</a></li>
               </ul>
             </div>
           </div>

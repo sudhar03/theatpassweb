@@ -538,12 +538,12 @@ function App() {
             </p>
             
             {/* Main Headline */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display text-navy-900 max-w-4xl mx-auto mb-8 leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-display text-navy-900 max-w-4xl mx-auto mb-8 leading-tight">
               Get 10+ qualified sales calls a month with prospects already in <span className="bg-clip-text text-transparent bg-gradient-to-r from-navy-900 via-gold-600 to-navy-950 font-extrabold">buying mode</span>.
             </h1>
             
             {/* Dynamic Typing Line */}
-            <div className="text-2xl md:text-3xl lg:text-4xl font-bold font-display text-navy-900 mb-8 min-h-[3.5rem]">
+            <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold font-display text-navy-900 mb-8 min-h-[3.5rem]">
               Stop <span className="bg-clip-text text-transparent bg-gradient-to-r from-red-600 via-gold-600 to-red-800 animate-gradient-x bg-[length:200%_auto]">
                 {typedText}
               </span>
@@ -592,7 +592,7 @@ function App() {
         <div className="max-w-content mx-auto px-6 relative z-10">
           <div className="text-center mb-16">
             <span className="inline-block bg-gold-100 text-gold-700 px-4 py-1.5 rounded-full text-sm font-bold mb-4">TESTIMONIALS</span>
-            <h2 className="text-4xl md:text-5xl font-bold font-display text-navy-900 mb-4">What clients say</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold font-display text-navy-900 mb-4">What clients say</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-gold-500 to-gold-700 mx-auto rounded-full"></div>
           </div>
           
@@ -712,7 +712,7 @@ function App() {
         <div className="max-w-content mx-auto px-6 relative z-10">
           <div className="text-center mb-16">
             <span className="inline-block bg-red-100 text-red-700 px-4 py-1.5 rounded-full text-sm font-semibold mb-4">THE PROBLEM</span>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display text-navy-900 mb-4">The old way is broken</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-display text-navy-900 mb-4">The old way is broken</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-red-400 to-red-600 mx-auto rounded-full"></div>
           </div>
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -772,7 +772,7 @@ function App() {
         <div className="max-w-content mx-auto px-6 relative z-10">
           <div className="text-center mb-16">
             <span className="inline-block bg-gold-100 text-gold-700 px-4 py-1.5 rounded-full text-sm font-bold mb-4">THE SHIFT</span>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display text-navy-900 mb-4">The shift</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-display text-navy-900 mb-4">The shift</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-gold-500 to-gold-700 mx-auto rounded-full"></div>
           </div>
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -831,7 +831,7 @@ function App() {
         <div className="max-w-content mx-auto px-6 relative z-10">
           <div className="text-center mb-16">
             <span className="inline-block bg-gold-100 text-gold-700 px-4 py-1.5 rounded-full text-sm font-bold mb-4">HOW IT WORKS</span>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display text-navy-900 mb-4">Buyer-Intent Client Acquisition™</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-display text-navy-900 mb-4">Buyer-Intent Client Acquisition™</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-gold-500 to-gold-700 mx-auto rounded-full mb-6"></div>
             <p className="text-xl text-text-muted mb-6 max-w-3xl mx-auto font-medium">A different approach to booking qualified sales calls.</p>
             <p className="text-lg text-text-muted max-w-3xl mx-auto">
@@ -946,7 +946,7 @@ function App() {
         <div className="max-w-content mx-auto px-6 relative z-10">
           <div className="text-center mb-16">
             <span className="inline-block bg-gold-100 text-gold-700 px-4 py-1.5 rounded-full text-sm font-bold mb-4">THE PROCESS</span>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display text-navy-900 mb-4">Four moves between you and a full calendar</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-display text-navy-900 mb-4">Four moves between you and a full calendar</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-gold-500 to-gold-700 mx-auto rounded-full mb-6"></div>
             <p className="text-xl text-text-muted max-w-3xl mx-auto font-medium">
               No volume games. No spray-and-pray. A deliberate system tuned for one outcome: calls with people already in buying mode.
@@ -1013,7 +1013,7 @@ function App() {
         <div className="max-w-content mx-auto px-6 relative z-10">
           <div className="text-center mb-16">
             <span className="inline-block bg-gold-100 text-gold-700 px-4 py-1.5 rounded-full text-sm font-bold mb-4">WHAT YOU GET</span>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display text-navy-900 mb-4">Everything, built around one job: calls that close.</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-display text-navy-900 mb-4">Everything, built around one job: calls that close.</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-gold-500 to-gold-700 mx-auto rounded-full mb-6"></div>
             <p className="text-xl text-text-muted font-medium">Every month, here is what shows up for you.</p>
           </div>
@@ -1054,7 +1054,7 @@ function App() {
         <div className="max-w-content mx-auto px-6 relative z-10">
           <div className="text-center mb-16">
             <span className="inline-block bg-gold-100 text-gold-700 px-4 py-1.5 rounded-full text-sm font-bold mb-4">THE DIFFERENCE</span>
-            <h2 className="text-4xl md:text-5xl font-bold font-display text-navy-900 mb-4">This is not another lead agency.</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold font-display text-navy-900 mb-4">This is not another lead agency.</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-gold-500 to-gold-700 mx-auto rounded-full mb-6"></div>
             <p className="text-xl text-text-muted max-w-2xl mx-auto font-medium">Most agencies sell volume. We focus on timing, intent, and booked conversations.</p>
           </div>
@@ -1122,71 +1122,67 @@ function App() {
         <div className="max-w-content mx-auto px-6 relative z-10">
           <div className="text-center mb-16">
             <span className="inline-block bg-gold-100 text-gold-700 px-4 py-1.5 rounded-full text-sm font-bold mb-4">OUR GUARANTEE</span>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display text-navy-900 mb-4">First 3 calls free. Never pay for a no-show.</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-display text-navy-900 mb-4">First 3 calls free. Never pay for a no-show.</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-gold-500 to-gold-700 mx-auto rounded-full mb-6"></div>
           </div>
 
-          <div className="max-w-3xl mx-auto bg-white rounded-3xl p-8 md:p-12 border border-slate-200 shadow-xl hover:shadow-2xl transition-shadow duration-300">
-            <div className="bg-gradient-to-br from-navy-900 to-[#0C1322] rounded-2xl p-8 mb-8 text-center border border-slate-800 shadow-lg relative overflow-hidden flex flex-col items-center justify-center">
-              {/* Background Glow */}
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(212,168,83,0.15),transparent_70%)]"></div>
-              {/* Gold Ribbon / Seal */}
-              <div className="w-16 h-16 bg-gold-500/10 rounded-full flex items-center justify-center border border-gold-400/30 mb-4 z-10 animate-pulse">
-                <svg className="w-8 h-8 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                </svg>
-              </div>
-              <h3 className="text-xl md:text-2xl font-bold font-display text-white mb-2 z-10">Pay-On-Show™ Guarantee</h3>
-              <p className="text-gold-400 text-xs font-mono tracking-wider uppercase z-10 font-bold">100% Risk-Free Alignment</p>
-            </div>
-            <p className="text-lg text-text-muted mb-4 font-medium">
-              The first 3 qualified calls are free, and you never pay for a no-show.
-            </p>
-            <p className="text-lg text-text-muted mb-4 font-medium">
-              If a prospect does not attend, you do not get charged. Simple as that.
-            </p>
-            <p className="text-lg text-navy-900 font-bold">
-              We carry the risk, not you.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* 15. Pricing / Offer Card Section */}
-      <section id="pricing" className="py-32 bg-white bg-dots-pattern animate-slide-up relative overflow-hidden">
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-gold-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30"></div>
-        <div className="max-w-content mx-auto px-6 relative z-10">
-          <div className="text-center mb-16">
-            <span className="inline-block bg-gold-100 text-gold-700 px-4 py-1.5 rounded-full text-sm font-bold mb-4">SIMPLE PRICING</span>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display text-navy-900 mb-4">Simple performance-based pricing</h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-gold-500 to-gold-700 mx-auto rounded-full mb-6"></div>
-          </div>
-
-          <div className="max-w-xl mx-auto bg-white rounded-3xl p-8 md:p-12 border-2 border-gold-400 shadow-2xl hover:shadow-3xl hover:-translate-y-1 transition-all duration-300">
-            <h3 className="text-2xl font-bold font-display text-navy-900 mb-8 text-center">First 3 Qualified Calls Free</h3>
-
-            <ul className="space-y-4 mb-8">
-              {[
-                "Pay only when a qualified prospect shows up",
-                "Never pay for a no-show",
-                "No long-term contracts",
-                "Cancel anytime",
-                "Built for B2B coaches, consultants & service founders"
-              ].map((item, i) => (
-                <li key={i} className="flex items-center gap-3">
-                  <div className="bg-navy-900 rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0">
-                    <svg className="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+          <div className="max-w-4xl mx-auto bg-navy-950 rounded-[2rem] p-8 md:p-12 border-2 border-gold-500/30 shadow-[0_0_50px_rgba(212,168,83,0.15)] relative overflow-hidden group hover:border-gold-400/50 transition-colors duration-500">
+            {/* Background Effects */}
+            <div className="absolute top-0 right-0 w-full h-full bg-[radial-gradient(circle_at_100%_0%,rgba(212,168,83,0.15),transparent_50%)]"></div>
+            <div className="absolute bottom-0 left-0 w-full h-full bg-[radial-gradient(circle_at_0%_100%,rgba(16,42,67,0.8),transparent_50%)]"></div>
+            
+            <div className="relative z-10 flex flex-col md:flex-row items-center gap-8 md:gap-12">
+              {/* Left Side: Shield/Badge */}
+              <div className="w-full md:w-1/3 flex flex-col items-center justify-center text-center">
+                <div className="relative w-32 h-32 md:w-40 md:h-40 flex items-center justify-center mb-6">
+                  {/* Glowing rings */}
+                  <div className="absolute inset-0 border-2 border-gold-500/20 rounded-full animate-ping opacity-20"></div>
+                  <div className="absolute inset-2 border border-gold-400/40 rounded-full animate-spin-slow"></div>
+                  <div className="absolute inset-4 bg-gradient-to-br from-gold-400 to-gold-600 rounded-full opacity-10 blur-md"></div>
+                  {/* Icon */}
+                  <div className="relative bg-gradient-to-br from-navy-900 to-navy-950 w-24 h-24 md:w-28 md:h-28 rounded-full border border-gold-500/50 flex items-center justify-center shadow-[0_0_30px_rgba(212,168,83,0.2)] z-10">
+                    <svg className="w-12 h-12 md:w-14 md:h-14 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                     </svg>
                   </div>
-                  <span className="text-navy-900 font-medium">{item}</span>
-                </li>
-              ))}
-            </ul>
+                </div>
+                <h3 className="text-2xl md:text-3xl font-bold font-display text-white mb-2">Pay-On-Show™</h3>
+                <p className="text-gold-400 text-xs font-mono tracking-widest uppercase font-bold">100% Risk-Free Alignment</p>
+              </div>
 
-            <a href="https://calendly.com/chandru-ink7/intro-call" target="_blank" rel="noopener noreferrer" className="block w-full bg-gradient-to-r from-navy-800 to-navy-900 hover:from-navy-900 hover:to-navy-950 text-white px-8 py-5 rounded-full font-bold text-lg transition-all hover:shadow-[0_0_20px_rgba(15,23,42,0.4)] hover:-translate-y-1 text-center">
-              Book Your Free Strategy Call
-            </a>
+              {/* Right Side: Text Points */}
+              <div className="w-full md:w-2/3 flex flex-col gap-6">
+                <div className="flex items-start gap-4 bg-navy-900/50 p-4 md:p-6 rounded-2xl border border-navy-800 backdrop-blur-sm hover:border-gold-500/40 transition-colors">
+                  <div className="bg-gold-500/20 rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mt-0.5 border border-gold-500/30">
+                    <span className="text-gold-400 font-bold">1</span>
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-bold text-white mb-1">First 3 Calls Free</h4>
+                    <p className="text-slate-400 text-sm leading-relaxed">Your first 3 qualified calls are entirely on us. Experience the system before committing a dime.</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start gap-4 bg-navy-900/50 p-4 md:p-6 rounded-2xl border border-navy-800 backdrop-blur-sm hover:border-gold-500/40 transition-colors">
+                  <div className="bg-gold-500/20 rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mt-0.5 border border-gold-500/30">
+                    <span className="text-gold-400 font-bold">2</span>
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-bold text-white mb-1">Never Pay For No-Shows</h4>
+                    <p className="text-slate-400 text-sm leading-relaxed">If a prospect doesn't attend, you do not get charged. Simple as that. We carry the risk, not you.</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4 bg-navy-900/50 p-4 md:p-6 rounded-2xl border border-navy-800 backdrop-blur-sm hover:border-gold-500/40 transition-colors">
+                  <div className="bg-gold-500/20 rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mt-0.5 border border-gold-500/30">
+                    <span className="text-gold-400 font-bold">3</span>
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-bold text-white mb-1">Cancel Anytime</h4>
+                    <p className="text-slate-400 text-sm leading-relaxed">No long-term contracts. No retainers. Just simple performance-based pricing built for your success.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -1196,7 +1192,7 @@ function App() {
         <div className="max-w-content mx-auto px-6 relative z-10">
           <div className="text-center mb-16">
             <span className="inline-block bg-gold-100 text-gold-700 px-4 py-1.5 rounded-full text-sm font-bold mb-4">FAQ</span>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display text-navy-900 mb-4">Questions</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-display text-navy-900 mb-4">Questions</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-gold-500 to-gold-700 mx-auto rounded-full mb-6"></div>
             <p className="text-xl text-text-muted font-medium">Straight answers.</p>
           </div>
@@ -1260,7 +1256,7 @@ function App() {
         <div className="max-w-content mx-auto px-6 relative z-10">
           <div className="text-center mb-16">
             <span className="inline-block bg-white text-navy-800 px-6 py-2 rounded-full text-sm font-bold mb-8 shadow-lg border border-slate-200">READY TO GET STARTED?</span>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display text-navy-900 mb-6 leading-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-display text-navy-900 mb-6 leading-tight">
               Stop convincing strangers.<br />Start talking to buyers.
             </h2>
             <p className="text-xl text-text-muted mb-8 max-w-2xl mx-auto font-medium">
@@ -1274,51 +1270,7 @@ function App() {
             </p>
           </div>
 
-          <div className="hidden md:block bg-white rounded-3xl border border-slate-200 shadow-2xl overflow-hidden max-w-4xl mx-auto hover:shadow-3xl transition-shadow duration-500">
-            {/* Calendar Header */}
-            <div className="bg-navy-950 px-6 py-4 flex items-center justify-between border-b border-slate-800">
-              <span className="text-sm font-bold text-white uppercase tracking-wider">Your Calendar This Week</span>
-              <span className="bg-green-500/10 text-green-400 border border-green-500/30 px-3 py-1 rounded text-xs font-bold">+6 New Meetings Booked</span>
-            </div>
-            {/* Calendar Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-5 divide-y md:divide-y-0 divide-x-0 md:divide-x divide-slate-200 text-center text-xs">
-              {[
-                { day: "Mon", dates: [
-                  { time: "10:00 AM", label: "Intro: Sarah M.", desc: "Marketing CEO", type: "Qualified" },
-                  { time: "2:30 PM", label: "Demo: James R.", desc: "Sales Coach (12 booked)", type: "Qualified" }
-                ] },
-                { day: "Tue", dates: [
-                  { time: "11:30 AM", label: "Intro: Elena R.", desc: "SaaS founder", type: "Qualified" }
-                ] },
-                { day: "Wed", dates: [
-                  { time: "1:00 PM", label: "Intro: David V.", desc: "Consulting CEO", type: "Qualified" },
-                  { time: "4:00 PM", label: "Demo: Kalyca Z.", desc: "6 closed client lead", type: "Qualified" }
-                ] },
-                { day: "Thu", dates: [
-                  { time: "10:30 AM", label: "Intro: Marcus S.", desc: "SaaS partner", type: "Qualified" }
-                ] },
-                { day: "Fri", dates: [
-                  { time: "2:00 PM", label: "Closing: Sarah M.", desc: "Follow-up proposal", type: "High Intent" }
-                ] }
-              ].map((col, idx) => (
-                <div key={idx} className="bg-navy-50/30 pb-4 md:pb-6">
-                  <div className="bg-navy-50 py-3 font-bold border-b border-slate-200 text-navy-800 text-[10px] uppercase tracking-wider">{col.day}</div>
-                  <div className="p-3 md:p-2 space-y-3 md:space-y-2 mt-0 md:mt-2">
-                    {col.dates.map((meeting, mIdx) => (
-                      <div key={mIdx} className="bg-white p-2.5 rounded-xl border border-slate-200 shadow-sm text-left hover:scale-[1.02] hover:shadow-md transition-all duration-200">
-                        <p className="font-bold text-[9px] text-navy-800 font-mono">{meeting.time}</p>
-                        <p className="font-bold text-[10px] text-navy-900 truncate mt-0.5">{meeting.label}</p>
-                        <p className="text-[9px] text-slate-500 truncate font-medium">{meeting.desc}</p>
-                        <div className="flex justify-between items-center mt-1.5 pt-1.5 border-t border-slate-100">
-                          <span className="text-[8px] bg-gold-100 text-gold-800 border border-gold-200 font-bold px-1.5 py-0.5 rounded font-sans uppercase">{meeting.type}</span>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
+
         </div>
       </section>
 
@@ -1352,7 +1304,7 @@ function App() {
             <div>
               <h4 className="text-white font-bold mb-4 uppercase tracking-wider text-sm">Contact</h4>
               <ul className="space-y-3 font-medium">
-                <li className="hover:text-gold-400 transition-colors cursor-pointer">hello@theatpass.com</li>
+                <li><a href="mailto:chandru@theatpass.com" className="hover:text-gold-400 transition-colors cursor-pointer">chandru@theatpass.com</a></li>
                 <li><a href="https://calendly.com/chandru-ink7/intro-call" target="_blank" rel="noopener noreferrer" className="hover:text-gold-400 transition-colors">Book a Call</a></li>
               </ul>
             </div>

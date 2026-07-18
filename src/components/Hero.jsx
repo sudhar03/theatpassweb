@@ -29,7 +29,7 @@ const Hero = () => {
 
           {/* CTA */}
           <a 
-            href="https://calendly.com/chandru-ink7/intro-call" 
+            href="https://calendly.com/chandru-theatpass/discovery-call" 
             target="_blank" 
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 md:px-8 md:py-4 bg-cta-blue text-white font-bold text-base md:text-lg rounded-full hover:bg-cta-hover transition-all hover:scale-105 hover:-translate-y-1 hover:shadow-xl hover:shadow-cta-blue/30 mb-6 group text-center"

@@ -17,7 +17,7 @@ const CTASection = () => {
           </p>
           
           <a 
-            href="https://calendly.com/chandru-ink7/intro-call" 
+            href="https://calendly.com/chandru-theatpass/discovery-call" 
             target="_blank" 
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-4 bg-cta-blue text-white font-bold text-lg rounded-full hover:bg-cta-hover transition-all hover:scale-105 hover:-translate-y-1 hover:shadow-xl hover:shadow-cta-blue/30 mb-8 group"

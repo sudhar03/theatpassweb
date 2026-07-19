@@ -11,10 +11,7 @@ export default function Legal({ initialTab = "Privacy Policy" }) {
 
   const tabs = [
     { id: "Privacy Policy", label: "Privacy policy", path: "/privacy-policy" },
-    { id: "Data Protection", label: "Data Protection", path: "/legal?tab=data-protection" },
-    { id: "Data protection addendum", label: "Data protection addendum", path: "/legal?tab=dpa" },
-    { id: "Terms and Conditions", label: "Terms and conditions", path: "/terms-and-conditions" },
-    { id: "Earnings disclaimer", label: "Earnings disclaimer", path: "/legal?tab=earnings" }
+    { id: "Terms and Conditions", label: "Terms and conditions", path: "/terms-and-conditions" }
   ];
 
   return (
